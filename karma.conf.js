@@ -2,7 +2,7 @@
  * @Author: wynn-w
  * @Description: 
  * @Date: 2020-12-12 21:52:04
- * @LastEditTime: 2020-12-12 22:03:26
+ * @LastEditTime: 2020-12-12 23:39:39
  * @LastEditors: wynn-w
  */
 // Karma configuration
@@ -22,9 +22,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      { patterns:'node_modules/**/*', watched: false, included: false, served: false},
-      'scr/**/*.js',
-      'test/main.test.js'
+      'scr/**/*.js', //target
+      'test/**/*.test.js' //test
     ],
 
 

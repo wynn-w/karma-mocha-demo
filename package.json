@@ -2,10 +2,10 @@
   "name": "karma-mocha-demo",
   "version": "1.0.0",
   "description": "利用karma+mocha+chai搭建单元环境（踩坑记录）",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "karma": "./node_modules/.bin/karma init ./karma.conf.js"
+    "karma": "./node_modules/.bin/karma init ./karma.conf.js",
+    "test-karma": "karma start ./karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,12 @@
   },
   "homepage": "https://github.com/wynn-w/karma-mocha-demo#readme",
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "karma": "^5.2.3",
     "karma-chrome-launcher": "^3.1.0",
     "karma-mocha": "^2.0.1",
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "parcel-bundler": "^1.12.4"
   }
 }
