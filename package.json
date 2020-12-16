@@ -2,11 +2,15 @@
   "name": "karma-mocha-demo",
   "version": "1.0.0",
   "description": "利用karma+mocha+chai搭建单元环境（踩坑记录）",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
+    "clean-dist": "rmdir /s/q dist",
+    "dev-test": "parcel build test/* --no-cache --no-minify & karma start --single run",
+    "test": "parcel build src/index.html && parcel build test/* --no-cache --no-minify && karma start --single run",
     "karma": "./node_modules/.bin/karma init ./karma.conf.js",
     "test-karma": "karma start ./karma.conf.js"
   },
+  "browserslist": "> 0.25%, not dead",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wynn-w/karma-mocha-demo.git"
